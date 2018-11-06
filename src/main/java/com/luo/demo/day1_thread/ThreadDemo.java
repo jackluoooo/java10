@@ -1,4 +1,4 @@
-package com.luo.demo;
+package com.luo.demo.day1_thread;
 
 /**
  * @author：罗金星 date 2018/11/5 13:57

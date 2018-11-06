@@ -1,4 +1,4 @@
-package com.luo.demo;
+package com.luo.demo.day1_thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
