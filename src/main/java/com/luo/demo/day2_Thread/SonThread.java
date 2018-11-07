@@ -3,7 +3,7 @@ package com.luo.demo.day2_Thread;
 /**
  * @author：罗金星 date 2018/11/6 11:19
  **/
-public class sonThread {
+public class SonThread {
     public static void main(String[] args) {
         System.out.println("thread1");
         new Thread(()->{
