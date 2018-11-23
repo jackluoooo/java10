@@ -26,5 +26,4 @@ public class Synchronization_Thread {
         new Thread(mt,"C").start();
     }
 
-
 }
