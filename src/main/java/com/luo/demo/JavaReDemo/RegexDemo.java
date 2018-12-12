@@ -17,8 +17,9 @@ public class RegexDemo {
 //        for (int x=0;x<reault.length;x++){
 //            System.out.println(reault[x]);
 //        }
-//        testMatcher();
-        test1();
+       // testMatcher();
+       // test1();
+        test2();
     }
      public static  void testMatcher(){
         String str="101";
@@ -40,6 +41,22 @@ public class RegexDemo {
           System.out.println(mat.group(0).replaceAll("#|\\{|\\}",""));
         }
     }
+     public static  void test2(){
+        String j="[{\"jd\":100.0,\"wd\":200.0}," +
+                "{\"jd\":100.0,\"wd\":200.0}," +
+                "{\"jd\":100.0,\"wd\":200.0}," +
+                "{\"jd\":100.0,\"wd\":200.0}]";
+        String regex="([0-9]+.[0-9]+)";
+        Pattern pattern=Pattern.compile(regex);
+        Matcher mat=pattern.matcher(j);
+        while (mat.find()){
+            System.out.println(mat.group(0));
+        }
+//        String[] coords=pattern.split(j);
+//        for (int i=0;i<coords.length;i++){
+//            System.out.println(coords[i]);
+//        }
+     }
 
 
 }
