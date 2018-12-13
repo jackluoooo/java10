@@ -12,6 +12,14 @@ public class P extends BaseAbstract implements  ImessageService,IChannnelService
       this.age=age;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "P{" +

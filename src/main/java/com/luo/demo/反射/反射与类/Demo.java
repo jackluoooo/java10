@@ -2,6 +2,7 @@ package com.luo.demo.反射.反射与类;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 /**
  * @author：罗金星 date 2018/12/13 10:54
@@ -30,7 +31,14 @@ public class Demo {
         {
             Method[] methods = cls.getMethods();//包含父类中的方法。
             for (Method method : methods) {
-                System.out.println(method);
+                System.out.print(Modifier.toString(method.getModifiers()) +" ");
+                System.out.print(method.getReturnType().getName()+" ");
+                System.out.println(method.getName()+"(");
+                Class<?> params []=method.getParameterTypes();//获取返回参数类型
+//                for(Class<?> param:params){
+//                    int i=0;
+//                    System.out.print("");
+//                }
             }
         }
         System.out.println("=====================================");
@@ -42,7 +50,7 @@ public class Demo {
             }
         }
         /**
-         * end 288
+         *Method 的invoke 方法最为重要
          */
     }
 }
