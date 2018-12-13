@@ -4,6 +4,22 @@ package com.luo.demo.反射.反射与类;
  * @author：罗金星 date 2018/12/12 11:25
  **/
 public class P extends BaseAbstract implements  ImessageService,IChannnelService{
+    private  String name;
+    private  int age;
+    public P(){}
+    public P(String name,int age){
+      this.name=name;
+      this.age=age;
+    }
+
+    @Override
+    public String toString() {
+        return "P{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     @Override
     public boolean connect() {
         return true;
